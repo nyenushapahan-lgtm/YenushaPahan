@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive portfolio of a creative developer – Home, Skills, About &amp; Contact. Modern dark/light theme, SEO friendly.">
+  <title>Portfolio · Creative Developer</title>
+  <!-- Google Font & Font Awesome for icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <div class="logo">Data Analyst<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch between dark and light mode">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home">
+      <div class="container home-grid">
+        <div class="home-content">
+          <span class="badge"><i class="fas fa-code"></i> available for freelance</span>
+          <h1>Hi, I'm <span>Yenusha Pahan</span></h1>
+          <p>Software Engineer | Data Analyst | Mobile Application Developer</p>
+          <a href="#contact" class="btn"><i class="fas fa-paper-plane"></i> Get in touch</a>
+        </div>
+        <div class="home-avatar">
+          <div class="avatar-placeholder">
+            <img src="./resources/images/myImage.jpg" alt="Yenusha Pahan - Portfolio Avatar">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Core Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fab fa-python"></i><h3>Python</h3><p>Automation, scripts, backend</p></div>
+          <div class="skill-card"><i class="fas fa-globe"></i><h3>Web Development</h3><p>HTML, CSS, JS, jQuery, Bootstrap</p></div>
+          <div class="skill-card"><i class="fas fa-mobile-alt"></i><h3>Mobile App Dev</h3><p>Behive, Flutter, Briefcase</p></div>
+          <div class="skill-card"><i class="fas fa-broom"></i><h3>Data Cleaning</h3><p>Pandas, NumPy, ETL</p></div>
+          <div class="skill-card"><i class="fas fa-database"></i><h3>MySQL</h3><p>Queries, design, optimization</p></div>
+          <div class="skill-card"><i class="fas fa-cloud"></i><h3>DevOps</h3><p>Git, CI/CD, AWS</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT + EDUCATION -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About &amp; Education</h2>
+        <div class="about-wrap">
+          <div class="about-text">
+            <h3>Building digital solutions</h3>
+            <p>I'm a passionate developer who can help you build your dream website and bring it to life. So, join with me to continue this journey.</p>
+            <div class="edu-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <h4>Undergraduate of B.Sc in Data Science</h4>
+                <p>Sabaragamuwa University Of Sri Lanka</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <i class="fas fa-certificate"></i>
+              <div>
+                <h4>University Of Moratuwa</h4>
+                <p>Python Programming</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <i class="fas fa-certificate"></i>
+              <div>
+                <h4>University Of Moratuwa</h4>
+                <p>Web Development & Frontend Development</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <i class="fas fa-certificate"></i>
+              <div>
+                <h4>University Of Moratuwa</h4>
+                <p>Project Management Foundation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Let's connect</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i> 
+              <a href="mailto:pahanyenusha@gmail.com">pahanyenusha@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i> 
+              <a href="https://github.com/nyenushapahan-lgtm">nyenushapahan-lgtm</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i> 
+              <a href="https://www.linkedin.com/in/yenusha-pahan-918524416">Yenusha Pahan</a>
+            </div>
+            <div class="contact-item">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>0774473644</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-pin"></i> 
+              <span>Gampaha</span>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm" action="https://formsubmit.co/nyenushapahan@gmail.com" method="post">
+                <!-- Honeypot (prevents spam) -->
+                <input type="text" name="_honey" style="display:none">
+                
+                <!-- Disable captcha (optional) -->
+                <input type="hidden" name="_captcha" value="false">
+                
+                <!-- Custom thank you page -->
+                <input type="hidden" name="_next" value="./thank-you.html">
+                
+                <!-- Custom subject line -->
+                <input type="hidden" name="_subject" value="New Portfolio Contact from {{name}}">
+                
+                <!-- Form fields -->
+                <input type="text" name="name" placeholder="Full name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+                
+                <button type="submit" class="btn">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><i class="fas fa-code"></i> built with <i class="fas fa-heart" style="color: #ef4444;"></i> · © 2026 Yenusha Pahan</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
